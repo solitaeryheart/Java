@@ -1,0 +1,47 @@
+class Maths
+{
+    void sum()
+    {
+        int a=84;
+        int b=99;
+        int sum = a+b;
+        System.out.println("THE SUM OF 84 AND 99 IS " +sum );
+    }
+    void avg()
+    {
+        float a = 77;
+        float b = 88;
+        float c = 95;
+        float avg = (a+b+c)/ 300;
+        System.out.println("THE AVERAGE OF 77, 88 AND 95 IS " +avg);
+    }
+    void divide()
+    {
+        float a = 77;
+        float b = 55;
+        float div = a/b;
+        System.out.println("77 DIVIDED BY 55 IS EQUAL TO "+ div);
+    }
+    void multiply()
+    {
+        int a = 85; int b = 51; int mul = a*b;
+        System.out.println("THE PRODUCT OF 85 AND 51 IS "+mul);
+    }
+    void subtract()
+    {
+        int a = 94; int b = 89; int sub = a-b;
+        System.out.println("89 SUBTRACTED FROM 94 IS EQUAL TO "+sub);
+    }
+}
+
+public class Main {
+    public static void main(String[] args)
+    {
+        Maths obj = new Maths();
+        obj.sum();
+        obj.avg();
+        obj.divide();
+        obj.multiply();
+        obj.subtract();
+    }
+}

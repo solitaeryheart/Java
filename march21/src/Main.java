@@ -1,0 +1,61 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class Main {
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        int nu;
+        Random r = new Random();
+        nu = r.nextInt(1,4); // 1 is the starting number and 4 is last number but 4 is excluded
+        System.out.println("ENTER\n1 FOR ROCK\n2 FOR PAPER\n3 FOR SCISSOR");
+        // 1 = rock 2 = paper 3 = scissor
+        int a = sc.nextInt();
+        if(nu == 1)
+        {
+            System.out.println("COMPUTER CHOOSE ROCK "+nu);
+        }
+        if(nu == 2)
+        {
+            System.out.println("COMPUTER CHOOSE PAPER "+nu);
+        }
+        if(nu == 3)
+        {
+            System.out.println("COMPUTER CHOOSE SCISSOR "+nu);
+        }
+
+        if(a == 1)
+        {
+            System.out.println("YOU CHOOSE ROCK "+a);
+        }
+        if(a == 2)
+        {
+            System.out.println("YOU CHOOSE PAPER "+a);
+        }
+        if(a == 3)
+        {
+            System.out.println("YOU CHOOSE SCISSOR "+a);
+        }
+        else if(a>3 || a<1)
+        {
+            System.out.println("YOU ENTERED INVALID NUMBER");
+        }
+
+        if(nu == 1 && a == 1 || nu == 2 && a == 2 || nu == 3 && a == 3)
+        {
+            System.out.println("DRAW");
+        }
+        else if(nu == 2 && a == 1 || nu == 1 && a == 2)
+        {
+            System.out.println("PAPER WINS");
+        }
+        else if(nu == 3 && a == 1 || nu == 1 && a == 3)
+        {
+            System.out.println("ROCK WINS");
+        }
+        else if(nu == 2 && a == 3 || nu == 3 && a == 2)
+        {
+            System.out.println("SCISSOR WINS");
+        }
+    }
+}
